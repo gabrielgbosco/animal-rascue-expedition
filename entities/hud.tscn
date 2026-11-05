@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_hud01"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud01")
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ObjectiveLabel" type="Label" parent="Control"]
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 700.0
+offset_bottom = 46.0
+theme_override_font_sizes/font_size = 22
+text = "Objetivo: "
+
+[node name="ProgressLabel" type="Label" parent="Control"]
+offset_left = 24.0
+offset_top = 50.0
+offset_right = 400.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 20
+text = "Progresso: 0 / 0"
+
+[node name="FeedbackLabel" type="Label" parent="Control"]
+offset_left = 560.0
+offset_top = 140.0
+offset_right = 1360.0
+offset_bottom = 180.0
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
+text = ""
+
+[node name="FeedbackTimer" type="Timer" parent="."]
+wait_time = 2.5
+one_shot = true

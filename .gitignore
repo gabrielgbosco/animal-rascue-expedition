@@ -1,0 +1,12 @@
+# Pasta de cache/import gerada automaticamente pela Godot 4.x
+.godot/
+
+# Pasta de build/exportação, caso você exporte dentro do próprio projeto
+build/
+export/
+*.exe
+*.pck
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db

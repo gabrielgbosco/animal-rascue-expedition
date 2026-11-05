@@ -1,0 +1,46 @@
+{
+	"animation_name": "slowly_walking_to_the_left",
+	"animation_style": "",
+	"animation_type": "slowly walking to the left",
+	"columns": 4,
+	"directions": [],
+	"frame_count": 4,
+	"frame_height": 260,
+	"frame_paths": [],
+	"frame_regions": [
+		{
+			"h": 260,
+			"w": 320,
+			"x": 0,
+			"y": 0
+		},
+		{
+			"h": 260,
+			"w": 320,
+			"x": 320,
+			"y": 0
+		},
+		{
+			"h": 260,
+			"w": 320,
+			"x": 640,
+			"y": 0
+		},
+		{
+			"h": 260,
+			"w": 320,
+			"x": 960,
+			"y": 0
+		}
+	],
+	"frame_width": 320,
+	"name": "turtle_walk",
+	"prompt": "slowly walking to the left",
+	"rows": 1,
+	"source_image": "res://assets/generated/turtle_base.png",
+	"source_tool": "animate_sprite",
+	"spritesheet_height": 260,
+	"spritesheet_path": "res://assets/generated/turtle_walk.png",
+	"spritesheet_width": 1280,
+	"type": "animation"
+}

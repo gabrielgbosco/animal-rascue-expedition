@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/intro_modal.gd" id="1_modal"]
+
+[node name="IntroModal" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_modal")
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 0
+
+[node name="Dim" type="ColorRect" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.55)
+
+[node name="Panel" type="PanelContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -200.0
+offset_right = 360.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Control/Panel"]
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 28
+
+[node name="VBox" type="VBoxContainer" parent="Control/Panel/Margin"]
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="Control/Panel/Margin/VBox"]
+theme_override_font_sizes/font_size = 34
+horizontal_alignment = 1
+autowrap_mode = 3
+text = "Objetivo da Fase"
+
+[node name="Body" type="Label" parent="Control/Panel/Margin/VBox"]
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 3
+text = ""
+
+[node name="StartButton" type="Button" parent="Control/Panel/Margin/VBox"]
+custom_minimum_size = Vector2(0, 60)
+theme_override_font_sizes/font_size = 24
+text = "Começar"
