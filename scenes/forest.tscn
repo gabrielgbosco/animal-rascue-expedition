@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://tfektqklbdn5" path="res://assets/generated/ground_band2.png" id="10_ground"]
 [ext_resource type="Texture2D" uid="uid://bketq00dukqbl" path="res://assets/generated/grass_tuft.png" id="11_tuft"]
 [ext_resource type="Script" uid="uid://dg77auftbekee" path="res://scripts/build_site.gd" id="12_build"]
+[ext_resource type="PackedScene" path="res://entities/curiosity_card.tscn" id="13_card"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yj5dr"]
 size = Vector2(6080, 174)
@@ -293,7 +294,7 @@ script = ExtResource("8_turtle")
 [node name="Sprite2D" type="Sprite2D" parent="Turtle" unique_id=884051227]
 texture = ExtResource("9_turtle")
 
-[node name="CuriosityScreen" type="Node2D" parent="." unique_id=673477246]
+[node name="CuriosityCard" parent="." unique_id=673477246 instance=ExtResource("13_card")]
 
 [node name="Tuft1" type="Sprite2D" parent="." unique_id=602771795]
 z_index = -1
